@@ -1,0 +1,14 @@
+[
+{
+	"name":"user-command-service",
+	"gitUrl":"https://github.com/LimeTray/user-command-service",
+	"branch":"develop",
+	"imageTag":"develop.19"
+},
+{
+	"name":"node-service-boilerplate",
+	"gitUrl":"https://github.com/LimeTray/node-service-boilerplate",
+	"branch":"master",
+	"imageTag":"latest"
+}
+]

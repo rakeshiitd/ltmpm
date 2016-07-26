@@ -1,0 +1,1 @@
+{"kind": "Service", "spec": {"type": "NodePort", "ports": [{"targetPort": 4000, "port": 80}], "selector": {"tier": "tier", "app": "node-service-boilerplate"}}, "apiVersion": "v1", "metadata": {"labels": {"track": "dummy", "debug": "true"}, "name": "node-service-boilerplate"}}

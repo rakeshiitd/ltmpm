@@ -1,0 +1,41 @@
+{
+  "kind": "Deployment", 
+  "spec": {
+    "template": {
+      "spec": {
+        "imagePullSecrets":[
+          {"name":"ecr"}
+        ],
+        "containers": [
+          {
+
+            "image": "445897275450.dkr.ecr.us-east-1.amazonaws.com", 
+            "ports": [
+              {
+                "containerPort": 3000
+              }
+            ], 
+            "resources": {
+              "requests": {
+                "cpu": "100m", 
+                "memory": "100Mi"
+              }
+            }, 
+            "name": "shell-dashboard-service"
+          }
+        ]
+      }, 
+      "metadata": {
+        "labels": {
+          "tier": "backend", 
+          "app": "shell-dashboard-service"
+        }
+      }
+    }, 
+    "replicas": 2
+  }, 
+  "apiVersion": "extensions/v1beta1", 
+  "metadata": {
+    "name": "shell-dashboard-service"
+  }
+}

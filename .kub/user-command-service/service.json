@@ -1,0 +1,1 @@
+{"kind": "Service", "spec": {"type": "NodePort", "ports": [{"targetPort": 8080, "port": 80}], "selector": {"tier": "tier", "app": "user-command-service"}}, "apiVersion": "v1", "metadata": {"labels": {}, "name": "user-command-service"}}
